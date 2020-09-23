@@ -6,4 +6,4 @@ codes and commands for detecting and analyzing pack-TIRs in animals
 4. Transcription analyses
 5. Analyses of DNA interaction data
 
-For information inquiry please email Shengjun Tan (tanshengjun@ioz.ac.cn), Huijing Ma (mahuijing@ioz.ac.cn).
+For information inquiry please email Shengjun Tan (tanshengjun@ioz.ac.cn), or Huijing Ma (mahuijing@ioz.ac.cn).
