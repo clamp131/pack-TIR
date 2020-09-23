@@ -4,7 +4,7 @@ codes and commands for detecting and analyzing pack-TIRs in animals
 2. [Identification](Pack-TIR_flies) and [analyses](phylogenetic_tree) of polymorphic Pack-TIRs in flies
 3. [Searching signal of positive selection](selective_sweep)
 4. [Transcription analyses](transcriptome)
-5. Analyses of DNA interaction data
+5. [Analyses of DNA interaction data](HiC_interaction)
 
 For information inquiry please email Shengjun Tan (tanshengjun@ioz.ac.cn), or Huijing Ma (mahuijing@ioz.ac.cn).
-selective_sweep
+
