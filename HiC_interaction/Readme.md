@@ -1,7 +1,7 @@
 
 1.trim the fastq files
 ---
-	trim_galore --paired SRRXXX_1.fastq SRRXXX_2.fastq
+	trim_galore --paired SRRXXX_1.fastq SRRXXX_2.fastq   
 2. digest the genome
 ---
 	hicup_digester  --config digester_example.conf 
