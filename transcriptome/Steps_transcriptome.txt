@@ -1,0 +1,9 @@
+Pack-TIR's expression in human: 
+	1. use STAR to align reads and filter
+		bash Pack_TIR_star.sh
+	2. do strandness de novo local assembly use trinity 
+		bash assemble.sh
+Ssk, Ssk-FB4 and FB4's expression
+	1. use STAR to align and assemble to see the Ssk-FB4's expression structure, just as human
+	2. use kallisto to do quantification
+		bash kallisto.sh
