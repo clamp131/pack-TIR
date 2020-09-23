@@ -4,5 +4,5 @@ Simply run perl pipeline.pl, it will run pack_tir_rmsk.pl, blat, filter.pl and f
 Before run the perl codes, prepare the genome sequence and repeatmasker files.   
 Using human as an example, the genome file can be downloaded here: ftp://hgdownload.soe.ucsc.edu/goldenPath/hg38/chromosomes/, and the repeatmasker file can be downloaded here:  ftp://hgdownload.soe.ucsc.edu/goldenPath/hg38/database/rmsk.txt.gz  
 
-If you want to detect the relevant full-length DNA TE, go to [DNA_TE_reference_genome](DNA_TE_reference_genome)  
+If you want to detect the relevant full-length DNA TE, go to [DNA_TE_reference_genome](../DNA_TE_reference_genome)  
 --
