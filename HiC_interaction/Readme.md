@@ -1,5 +1,5 @@
 
-1.trim the fastq files
+1. trim the fastq files
 ---
 	trim_galore --paired SRRXXX_1.fastq SRRXXX_2.fastq   
 2. digest the genome
