@@ -1,0 +1,31 @@
+#!/bin/bash
+#PBS -N smrtsv_427
+#PBS -l nodes=1:ppn=1
+#PBS -o smrtsv.sh.out
+#PBS -e smrtsv.sh.err
+#PBS -l walltime=12000:00:00
+#PBS -q blade
+folder_sra='/home/tansj/pacbio/427'
+cd $folder_sra
+
+
+smrtsv.py index dmel_6.10.fa
+find -name "*.fastq" -exec readlink -f {} \; > reads.fofn
+smrtsv.py --tmpdir temp align --threads 3 /rd/laixh/fruitfly_reference/dmel_6.10.fa reads.fofn 
+smrtsv.py detect dmel_6.10.fa alignments.fofn candidates.bed --min_support 5 --max_support 1000 --min_coverage 5 --max_coverage 1000
+cd alignments
+samtools index 0.bam 0.bam.bai
+perl smrtsv_assemble_1.pl
+perl smrtsv_assemble_2.pl
+
+cd "local_assemblies"
+for file in `ls | grep "consensus_reference_alignment.*.sam"`
+do
+ name=`echo $file | sed 's/sam/bam/g'`
+ samtools view -Sbu -t ../dmel_6.10.fa.fai $file |  bamleftalign -f ../dmel_6.10.fa | samtools sort -O bam -o $name
+done
+cd ".."
+
+smrtsv.py call dmel_6.10.fa alignments.fofn local_assembly_alignments.bam variants.vcf --sample 208 --species drosophila
+
+
