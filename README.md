@@ -1,6 +1,6 @@
 # Pack-TIR
 codes and commands for detecting and analyzing pack-TIRs in animals
-1. [Mozilla](Identification) and analyses of Pack-TIRs in 100 animal reference genomes
+1. [Identification]( and analyses of Pack-TIRs in 100 animal reference genomes
 2. Identification and analyses of polymorphic Pack-TIRs in flies
 3. Searching signal of positive selection
 4. Transcription analyses
